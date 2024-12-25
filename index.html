@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-Final-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="manager">
+        <div id="managerContainer">
+            <div id="addAndremove">
+                <button id="addMenu">메뉴추가</button>
+                <button id="removeMenu">메뉴삭제</button>
+                <button id="backMenu">돌아가기</button>
+            </div>
+            <div id="sale">
+                <button id="sale">판매내역</button>
+                    <ul id="saleList">
+                        
+                    </ul>
+                <button id="saleReset">초기화</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="receipt">
+        <div class="receiptHeader"><h3>RECEIPT</h3></div>
+        <div class="receiptContianer">
+            <ul id="receiptList">
+
+            </ul>
+        </div>
+        <div class="receiptBottom">
+            <span>Adress : 부산 사상구 사상로 182 1층 쉽커피</span><span>Tel : 070-7543-6598</span><span>10초 뒤에 종료됩니다.</span>
+        </div>
+    </section>
+    <div id="screen">
+    <header id="mainHeader">
+        <div id="logo"><img src="./img/logo.png"></div>
+    </header>
+    <nav>
+        <ul>
+            <li>매장 주문</li>
+            <li>포장 주문</li>
+            <li id="mngbtn">관리자모드</li>
+        </ul>
+    </nav>
+    <section>
+    <section id="menuBar"">
+        <ul id="menuSideBar">
+            <li>Coffee</li>
+            <li>Non-Coffee</li>
+            <li>Bakery</li>
+            <li>Product</li>
+        </ul>
+    </section>
+    <section id="container">
+        <section id="menuContainer">
+            <div id="menuList" class="menuC">
+                    <div class="menu" draggable="true"><img width="100vw" src="./img/amr.png"><span class="menuName">아메리카노</span><span class="price">5000원</span><div class="btn"><button class="plus">+</button><span class="quantity">1</span><button class="minus">-</button><br><span class="total_price">-</span></div></div> 
+                    <div class="menu" draggable="true"><img width="100vw" src="./img/lat.png"><span class="menuName">카페라떼</span><span class="price">5500원</span><div class="btn"><button class="plus">+</button><span class="quantity">1</span><button class="minus">-</button><br><span class="total_price">-</span></div></div> 
+                    <div class="menu" draggable="true"><img width="100vw" src="./img/crlat.png"><span class="menuName">크림라떼</span><span class="price">6000원</span><div class="btn"><button class="plus">+</button><span class="quantity">1</span><button class="minus">-</button><br><span class="total_price">-</span></div></div> 
+                    <div class="menu" draggable="true"><img width="100vw" src="./img/mar.png"><span class="menuName">말차라떼</span><span class="price">6000원</span><div class="btn"><button class="plus">+</button><span class="quantity">1</span><button class="minus">-</button><br><span class="total_price">-</span></div></div> 
+            </div>
+                <div id="cartBar">
+                    <div id="cartContainer" class="cartC">
+                     
+                    </div>
+                    <div id="orderContainer">
+                        <div id="orderTotal">
+                            <h2>장바구니</h2>
+                            <span>주문 수량</span><br><span class="orderTotalAmount">0</span><br>
+                            <span>주문 금액</span><br><span class="orderTotalPrice">0</span>
+                            <div><button id="order">결제</button></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+</div>
+</body>
+</html>

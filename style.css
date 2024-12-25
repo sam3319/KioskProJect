@@ -1,0 +1,330 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+#receipt{
+    position: absolute;
+    width: 40vw;
+    height: 65vw;
+    left: 30%;
+    top: 10%;
+    z-index: 100;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: NanumSquare;
+    text-align: center;
+    display: none;
+}
+
+#receipt > .receiptHeader{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+#receipt > .receiptContianer{
+    height: 70%;
+    display: flex;
+    border-top: 2px dotted gray;
+    border-bottom: 2px dotted gray;
+}
+#receipt > .receiptContianer > #receiptList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+    width: 100%;
+} 
+#receiptList > li{
+    line-height: 5vw;
+    text-align: center;
+}
+#receiptList > div{
+    width: 100%;
+}
+#receipt > .receiptBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3vw;
+    height: 11%;
+}
+ 
+#mainHeader{
+    position: sticky;
+    align-content: center;
+    margin-inline: 10%;
+    height: 5vw;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo img{
+    width: 15vw;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10%;
+    border-bottom: 2px solid gray;
+    font-family: Noto Sans KR;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+
+nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+nav > ul > li{
+    text-align: center;
+    align-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 7vw;
+    height: 3vw;
+    margin-right: 1vw;
+    color: gray;
+}
+nav > ul > li:hover{
+    background-color: #FAFAFA;
+}
+
+nav > ul > li:nth-child(1){
+    color: black;
+    border: 1.5px solid black;
+}
+nav > ul > li:nth-child(3):hover{
+    cursor: pointer;
+    color: black;
+    border: 1.5px solid black;
+}
+
+#menuBar{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10%;
+}
+
+#menuBar > ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-family: NanumSquare;
+    font-size: 1.1vw;
+}
+
+#menuBar > ul > li{
+    text-align: center;
+    align-content: center;
+    border: 1px solid gray;
+    width: 9vw;
+    height: 4vw;
+    color: gray;
+    flex: 1;    
+}
+
+#menuBar > ul > li:hover{
+    background-color: #FAFAFA;
+}
+
+#menuBar > ul > li:nth-child(1){
+    border-bottom: none;
+    color: black;
+    font-weight: bolder;
+    border: 1.5px solid black;
+    border-bottom: none;
+}
+
+#menuContainer{
+    margin-inline: 10%;
+    height: 90vw;
+    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#menuContainer > #menuList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: NanumSquare;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 2vw;
+}
+
+#menuContainer > #menuList > .menu {
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    color: gray;
+    width: 15vw;
+    height: 17vw;
+    cursor: grab;
+}
+
+#menuContainer > #menuList > div:hover {
+    color: black;
+    border: 1.5px solid black;
+}
+
+#menuContainer > #menuList > div > img {
+    width: 12vw;
+    padding: 1.3vw;
+}
+#cartBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    font-family: NanumSquare;
+
+}
+#cartBar > #cartContainer {
+    font-family: NanumSquare;
+    font-size: 0.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#cartContainer .price{
+    display: none;
+}
+
+#cartContainer > .menu:hover{
+    border: 1.3px solid black;
+    color: black;
+    font-weight: bold;
+}
+#orderContainer {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid gray;
+
+}
+#order{
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 10vw;
+    height: 1.5vw;
+    font-family: NanumSquare;
+    text-align: center;
+}
+#order:hover{
+    background-color: #FAFAFA;
+    font-weight: bold;
+}
+
+#manager{
+    display: none;
+    margin-top: 10vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-inline: 10%;
+    height: 30vw;
+}
+#manager > #managerContainer{
+    margin-top: 10vw;
+
+}
+#manager > #managerContainer > #addAndremove >{
+    display: flex;
+    flex-direction: row;
+}
+#manager > #managerContainer button{
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 5px;
+    font-family: Noto Sans KR;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    width: 7vw;
+    height: 3vw;
+}
+
+#manager > #managerContainer button:hover{
+    border: 1.5px solid black;
+    color: black;
+}
+
+#saleList{
+    display: none;
+}
+
+/* Java Script CSS */
+.menuDrag {
+    background-color: #FAFAFA;
+}
+
+.dropMenu {
+    background-color: black;
+}
+#menuList .btn{
+    display: none;
+}
+
+#cartContainer .btn{
+    display: block;
+}
+
+#cartContainer .menu{
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    align-items: center;
+    color: gray;
+    cursor: grab;
+}
+.receiptOn{
+    display: block;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
