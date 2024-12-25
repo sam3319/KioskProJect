@@ -5,9 +5,11 @@
 
 - 기능 설명
   1. 관리자 모드
+  
    PASSWORD = sheep
   
-  2. 메뉴 추가 (Test Data)
+  3. 메뉴 추가 (Test Data)
+
    메뉴 이름 : 잠봉샌드위치
    메뉴 이미지 경로 : ./img/send.jpg
    메뉴 가격 : 7000
