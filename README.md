@@ -1,4 +1,4 @@
-# KioskProJect
+# KioskProJect ( JS 토이 프로젝트 )
 
 - 기능 설명
   - 관리자 모드
